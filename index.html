@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html tang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Clase1 Js CosasQuePasan,NoPasanYNoDeberianPasar</title>
+	<script>
+		// key c=> charCode 99, Key p=> charCode 112
+		document.addEventListener("keypress", function(e){
+					console.log(e) 
+			// CAPTURA LA TECLA console.log(e) funciona con C y Z
+			var ryu= document.querySelector("img");
+			if (e.charCode === 99) {
+				ryu.src = "./css/images/1.png";
+			} else if (e.charCode === 122) {
+				ryu.src = "./css/images/2.png";
+			}
+		})
+
+	</script>
+</head>
+<body>
+	<img src="./css/images/1.png" alt="ryu-1">
+
+</body>
+</html>
